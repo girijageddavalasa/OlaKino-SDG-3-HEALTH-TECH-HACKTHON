@@ -1,0 +1,346 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about{
+    list-style: none;
+    color:white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Adding transition for color */
+}
+
+nav ul li a:hover {
+    color: gray; /* Change color on hover */
+}
+
+.hero {
+    background-image: url("land.webp");
+    background-size: cover;
+    background-position: center; /* Ensure the background is centered */
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 1s ease-in-out; /* Adding transition for background image */
+}
+
+.hero:hover {
+    background-image: url("hover.webp"); /* Change to the new background image on hover */
+}
+.hero h2,
+
+.about ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.about li {
+    margin: 5px 0; /* Add some margin for spacing */
+}
+
+.about a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set text color to white */
+}
+
+
+.cta {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Adding transition for background color */
+    animation: bounce 2s infinite; /* Adding bounce animation */
+}
+
+.cta:hover {
+    background-color: gray; /* Change background color on hover */
+}
+/* .ial-media {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.social-media a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ddd;
+} */
+
+.social-media {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    size: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: rgb(234, 15, 139); /* Set color for social media icons */
+}
+
+.social-media a {
+    color: rgb(211, 14, 133); /* Initial color for social media icons */
+    font-size: 1.5em; /* Adjust size as needed */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Adding transition for color */
+}
+
+.social-media a:hover {
+    color: orange; /* Change color to orange on hover */
+}
+
+.features {
+    text-align: center;
+}
+
+.feature img {
+    width: 400px;
+    height: 400px;
+    animation: zoomIn 1s ease-in-out; /* Adding zoom-in animation */
+}
+.container {
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 70px;
+    box-sizing: border-box;
+    max-width: 550px;
+    margin: auto; /* Centers the container horizontally */
+    margin-top:150px ;
+    margin-bottom: 150px;
+    text-align: center; /* Centers text content inside the container */
+}
+
+.container .photo {
+    margin: auto; /* Centers the photo horizontally */
+    margin-bottom: 20px; /* Adds some space below the photo */
+}
+
+.container .inputs {
+    text-align: left; /* Aligns input labels and fields to the left */
+    margin-top: 20px;
+}
+
+.container input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #45a049;
+}
+
+/* Updated CSS to center .main container and its content */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Example font */
+    background-color: #f1f1f1; /* Example background color */
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px; /* Adjust max-width as per your layout */
+    width: 90%; /* Adjust width as per your layout */
+    padding: 20px;
+    background-color: #f9f9f9; /* Background color */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.active-challenges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature {
+    width: 300px; /* Adjust width as needed */
+    margin: 20px;
+    text-align: center;
+    background-color: #fff; /* Example background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.feature p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Optional: Add transitions for smooth animations */
+.feature:hover {
+    transform: scale(1.05); /* Example: Enlarge on hover */
+}
+
+
+
+
+.activity-status {
+    margin-bottom: 20px;
+}
+
+.activity-status label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.activity-status select {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.activity-status button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.activity-status button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#group-activities {
+    margin: 20px 0;
+}
+
+#group-activities form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#group-activities label, #group-activities input, #group-activities select, #group-activities button {
+    margin: 5px 0;
+}
+
+#active-challenges {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#active-challenges div {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+#active-challenges div:last-child {
+    border-bottom: none;
+}
+
+.active-challenges h4 {
+    margin: 0;
+}
+
+.active-challenges button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.active-challenges button:hover {
+    background-color: #218838;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
